@@ -1,0 +1,232 @@
+---
+format: html
+title: "Zinc treatment: tackling one of the deadliest diseases for African children"
+subtitle: "MT5000 - Assignment 2"
+author: "Ariel Koltein"
+date: "04/28/2023"
+execute:
+  echo: false
+  warning: false
+  message: false
+
+---
+Diarrhoeal diseases are the ***second leading cause of death*** among children under five and are responsible for the deaths of an estimated 525,000 children worldwide each year.
+
+Children who are **malnourished**, have limited or **no access to safe water**, and have **poor hygiene and excreta disposal practices** in the home are most at risk of life-threatening diarrhoea. Poverty also generally limits access to health care and restricts appropriate and balanced diets. Nowadays, about 50% of the African population does not have access to safe drinking water and 66% does not have access to hygienic sanitation facilities. This contributes to the fact that **the under-five mortality rate in the African region is seven times higher than in the European region**.
+
+[![](https://akta.coaxys.com/image/5159c442-dd19-4eff-a03c-efbab34f610b/nutriset/nutriset/produits/utilisation-zincfant.png)](https://akta.coaxys.com/image/5159c442-dd19-4eff-a03c-efbab34f610b/nutriset/nutriset/produits/utilisation-zincfant.png)
+
+Yet a simple treatment solution exists today, which includes **oral rehydration solution** (ORS), a solution of clean water, sugar and salt, and dispersible **20 mg zinc tablets**. 
+
+<p style="text-align:center;">***The potential to save children's lives is therefore considerable.***</p>
+
+
+```{r}
+#| label: Code 1
+#| include: false
+
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+
+library(tidyverse)
+library(readr)
+library(maps)
+library(mapdata)
+library(ggplot2)
+library(gridExtra)
+library(scales)
+library(mapproj)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(grDevices)
+library(ggrepel)
+
+options(scipen = 999)
+
+U1 <- read_csv("UNICEF_1.csv")
+U2 <- read_csv("UNICEF_2.csv")
+U3 <- read_csv("UNICEF_3.csv")
+
+```
+
+<h3 style="text-align: center;">Evolution of access to zinc treatment in Africa for children with diarrhoea.</h3>
+
+```{r}
+#| label: Code 2
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+african_countries <- world %>%
+  filter(continent == "Africa")
+
+U2_africa <- U2 %>%
+  filter(sex == "Total") %>%
+  filter(country %in% african_countries$admin) %>%
+  select(country, time_period, obs_value)
+
+african_countries_data <- full_join(african_countries, U2_africa, by = c("admin" = "country"))
+
+colors <- c("2005-2008" = "#a6611b", "2009-2012" = "#dfc67d", "2013-2016" = "#20cdc1", "2017-2020" = "#568571")
+
+map_func <- function(period) {
+  year_range <- as.numeric(unlist(strsplit(period, "-")))
+  year_data <- U2_africa %>%
+    filter(time_period >= year_range[1] & time_period <= year_range[2]) %>%
+    group_by(country) %>%
+    summarize(obs_value = coalesce(last(obs_value), 0))
+
+  map_data <- full_join(african_countries, year_data, by = c("admin" = "country"))
+
+  map_plot <- ggplot() +
+    geom_sf(data = map_data, aes(fill = obs_value), color = "black", size = 0.2) +
+    coord_sf(datum = NA) +
+    ggtitle(paste("Vaccination map for", period)) +
+    scale_fill_gradient(name = "Value (%)", low = "white", high = colors[period], guide = "legend", na.value = "grey") +
+    theme_void()
+  
+  return(map_plot)
+}
+
+periods <- c("2005-2008", "2009-2012", "2013-2016", "2017-2020")
+maps <- lapply(periods, map_func)
+
+grid.arrange(grobs = maps, ncol = 2)
+
+```
+
+Despite a lack of consistency in the data, there is an increase in the scale which indicates that the vaccine has spread across the continent.
+
+### Some key facts to understand this killer disease:
+- Diarrhoea is defined as having three or more loose or watery
+stools per day.
+- Diarrhoea can last for days and deprive the body of water and
+salts needed for survival.
+- The main causes of death from diarrhoea are severe dehydration, fluid loss and septic bacterial infections.
+- Diarrhoeal diseases are mainly the result of contamination of
+food and water sources.
+- There are three clinical types of diarrhoea:
+   1. Acute watery diarrhoea, which lasts several hours or days, and includes cholera.
+   2. Acute bloody diarrhoea (also called dysentery).
+   3. Persistent diarrhoea, which lasts 14 days or more
+   
+
+Interventions to prevent diarrhoea, including the **provision of safe drinking water**, the use of **improved sanitation facilities** and **handwashing with soap**, can reduce the risk of illness. In 2013, a new global action plan was launched by WHO and UNICEF to address this. New child-friendly zinc and amoxicillin tablets and flavoured oral rehydration salts in sachets are **more palatable to children** . In addition, new uses of **mobile technology** allow health workers to reach further into remote communities and other areas where children are most at risk. The full report can be downloaded [`here`](https://reliefweb.int/attachments/3b28f89a-2fe6-38c8-96c4-574f09ecd370/gappd-full-report.pdf).
+
+> *“Innovation has helped save millions of lives; it can and will save many more!”*
+
+<p style="text-align: right;">Anthony Lake, UNICEF Executive Director
+</p>
+
+
+<h3 style="text-align: center;">Inequalities in access to treatment by gender.</h3>
+
+```{r}
+#| label: Code 3
+
+african_countries <- c("DZA", "AGO", "BEN", "BWA", "BFA", "BDI", "CPV", "CMR", "CAF", "TCD", "COM", "COG", "COD", "DJI", "EGY", "GNQ", "ERI", "SWZ", "ETH", "GAB", "GMB", "GHA", "GIN", "GNB", "CIV", "KEN", "LSO", "LBR", "LBY", "MDG", "MWI", "MLI", "MRT", "MUS", "MAR", "MOZ", "NAM", "NER", "NGA", "RWA", "STP", "SEN", "SYC", "SLE", "SOM", "ZAF", "SSD", "SDN", "TZA", "TGO", "TUN", "UGA", "ZMB", "ZWE")
+
+african_data <- U2 %>% filter(alpha_3_code %in% african_countries)
+
+african_data <- african_data %>% mutate(time_period = as.numeric(time_period))
+
+time_periods <- seq(2005, 2020, by = 2)
+
+african_data <- african_data %>%
+  mutate(time_period_group = cut(time_period, breaks = c(time_periods, 2021), include.lowest = TRUE, labels = FALSE))
+
+avg_vaccination_by_sex <- african_data %>%
+  filter(sex != "Total") %>%
+  group_by(time_period_group, sex) %>%
+  summarise(mean_obs_value = mean(obs_value, na.rm = TRUE))
+
+ggplot(avg_vaccination_by_sex, aes(x = factor(time_period_group), y = mean_obs_value, fill = sex)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(x = "Time Periods", y = "Average Vaccination Proportion", fill = "Sex") +
+  theme_minimal() +
+  scale_x_discrete(labels = paste(time_periods, time_periods + 1, sep = "-")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+Now, let's take a step back and look at other criteria of living conditions in Africa and how they have evolved.
+
+<h3 style="text-align: center;">GDP per capita according to Life expectancy at birth per country in 2020.</h3>
+
+```{r}
+#| label: Code 4
+
+U3_modified <- U3 %>%
+  mutate(year = as.numeric(year)) %>%
+  filter(year == 2020) %>%
+  filter(country %in% c("Benin", "Burkina Faso", "Cameroon", "Central African Republic", "Chad", "Comoros", "Congo", "Congo, the Democratic Republic of the", "CÃ´te d'Ivoire", "Egypt", "Equatorial Guinea", "Ethiopia", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Kenya", "Lesotho", "Liberia", "Madagascar", "Malawi", "Mali", "Mauritania", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Senegal", "Sierra Leone", "South Africa", "South Sudan", "Sudan", "Swaziland", "Tanzania, United Republic of", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe")) %>%
+  drop_na(Lifeexp, GDPpercapita)
+
+ggplot(data = U3_modified) +
+  aes(x = GDPpercapita, y = Lifeexp, color = country, label = country) +
+  geom_point(alpha = 0.3, size = 1, show.legend = FALSE) +
+  geom_smooth(method = "lm", se = FALSE, show.legend = FALSE, color = "blue", linetype = "longdash") +
+  geom_text(aes(label = country), size = 3, hjust = -0.1, vjust = 0.5) +
+  scale_x_continuous(breaks = seq(0, 7000, by = 1000), labels = scales::comma) +
+  scale_y_continuous(breaks = seq(20, 80, by = 5)) +
+  labs(
+    x = "GDP per capita (in US$)",
+    y = "Life expectancy at birth (in years)") +
+  theme_light() +
+  theme(legend.position = "none")
+
+```
+In addition, it can be noted that life expectancy at birth has increased steadily over the past 60 years while GDP per capita has changed little in many countries.
+
+As a comparison, in Europe in 2020, the life expectancy at birth was **80.4 years** and the GDP per capita reached **$34.33**.
+
+<h3 style="text-align: center;">Evolution of the population of Africa since the 1960s.</h3>
+
+```{r}
+#| label: Code 5
+
+filtered_data <- U3 %>%
+  filter(country %in% c("Benin", "Burkina Faso", "Cameroon", "Central African Republic", "Chad", "Comoros", "Congo", "Congo, the Democratic Republic of the", "Côte d'Ivoire", "Egypt", "Equatorial Guinea", "Ethiopia", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Kenya", "Lesotho", "Liberia", "Madagascar", "Malawi", "Mali", "Mauritania", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Senegal", "Sierra Leone", "South Africa", "South Sudan", "Sudan", "Swaziland", "Tanzania, United Republic of", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe"))
+
+plot1 <- filtered_data %>%
+  ggplot(aes(year, TotPopulation, color = country, group = country)) +
+  geom_line(alpha = 0.7, size = 1) +
+  geom_text_repel(data = . %>% group_by(country) %>% top_n(1, year),
+                  aes(label = country, x = year + 0.5, y = TotPopulation),
+                  hjust = 0, vjust = 0.5,
+                  size = 3, show.legend = FALSE, nudge_x = 0.5) +
+  scale_x_continuous(breaks = c(1960, 1970, 1980, 1990, 2000, 2010, 2020)) +
+  scale_y_continuous(labels = label_comma()) +
+  labs(
+    x = "Years",
+    y = "Total population") +
+  theme_light() +
+  theme(legend.position = "none")
+
+plot2 <- filtered_data %>%
+  filter(TotPopulation >= 0 & TotPopulation <= 40e6) %>%
+  ggplot(aes(year, TotPopulation, color = country, group = country)) +
+  geom_line(alpha = 0.7, size = 1) +
+  geom_text_repel(data = . %>% group_by(country) %>% top_n(1, year),
+                  aes(label = country, x = year + 0.5, y = TotPopulation),
+                  hjust = 0, vjust = 0.5,
+                  size = 3, show.legend = FALSE, nudge_x = 0.5) +
+  scale_x_continuous(breaks = c(1960, 1970, 1980, 1990, 2000, 2010, 2020)) +
+  scale_y_continuous(labels = label_comma(), limits = c(0, 40e6)) +
+  labs(
+    x = "Years",
+    y = "Total population (0 - 40M)") +
+  theme_light() +
+  theme(legend.position = "none")
+
+grid.arrange(plot1, plot2, ncol = 2)
+
+```
+
+If you want to find out more about diarrhoea and its treatment, please visit the [`UNICEF website`](https://data.unicef.org/topic/child-health/diarrhoeal-disease/)!
+
+[![](https://reliefweb.int/sites/default/files/styles/small/public/previews/3b/28/3b28f89a-2fe6-38c8-96c4-574f09ecd370.png?1713802-1-0)](https://reliefweb.int/sites/default/files/styles/small/public/previews/3b/28/3b28f89a-2fe6-38c8-96c4-574f09ecd370.png?1713802-1-0)
+
+
+### Click [`here`](https://www.unicef.ie/donate/?utm_source=unicef.org.referral&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=donatelink&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_content=donate&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_campaign=unicef.org#1
+) to make a donation.
+
+<p style="text-align: right;">*Data from the official UNICEF, WHO and UN websites*</p>

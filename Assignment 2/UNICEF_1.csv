@@ -1,0 +1,172 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Albania,AL,ALB,8,VMI (vast majority index of income inequality),2012,0.777125,Total,,Ratio,,,,Total
+Algeria,DZ,DZA,12,VMI (vast majority index of income inequality),2012,0.78475,Total,,Ratio,,,,Total
+Angola,AO,AGO,24,VMI (vast majority index of income inequality),2009,0.643125,Total,,Ratio,,,,Total
+Argentina,AR,ARG,32,VMI (vast majority index of income inequality),2017,0.66975,Total,,Ratio,,,,Total
+Armenia,AM,ARM,51,VMI (vast majority index of income inequality),2017,0.719875,Total,,Ratio,,,,Total
+Australia,AU,AUS,36,VMI (vast majority index of income inequality),2014,0.712625,Total,,Ratio,,,,Total
+Austria,AT,AUT,40,VMI (vast majority index of income inequality),2015,0.77025,Total,,Ratio,,,,Total
+Azerbaijan,AZ,AZE,31,VMI (vast majority index of income inequality),2005,0.777375,Total,,Ratio,,,,Total
+Bangladesh,BD,BGD,50,VMI (vast majority index of income inequality),2016,0.732,Total,,Ratio,,,,Total
+Belarus,BY,BLR,112,VMI (vast majority index of income inequality),2017,0.806375,Total,,Ratio,,,,Total
+Belgium,BE,BEL,56,VMI (vast majority index of income inequality),2015,0.7935,Total,,Ratio,,,,Total
+Belize,BZ,BLZ,84,VMI (vast majority index of income inequality),1999,0.52875,Total,,Ratio,,,,Total
+Benin,BJ,BEN,204,VMI (vast majority index of income inequality),2015,0.59825,Total,,Ratio,,,,Total
+Bhutan,BT,BTN,64,VMI (vast majority index of income inequality),2017,0.695375,Total,,Ratio,,,,Total
+Bolivia, Plurinational State of,BO,BOL,68,VMI (vast majority index of income inequality),2017,0.64325,Total,,Ratio,,,,Total
+Bolivia,BO,BOL,68,VMI (vast majority index of income inequality),2017,0.64325,Total,,Ratio,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,VMI (vast majority index of income inequality),2011,0.741625,Total,,Ratio,,,,Total
+Botswana,BW,BWA,72,VMI (vast majority index of income inequality),2016,0.518875,Total,,Ratio,,,,Total
+Brazil,BR,BRA,76,VMI (vast majority index of income inequality),2017,0.527625,Total,,Ratio,,,,Total
+Bulgaria,BG,BGR,100,VMI (vast majority index of income inequality),2014,0.70075,Total,,Ratio,,,,Total
+Burkina Faso,BF,BFA,854,VMI (vast majority index of income inequality),2014,0.696125,Total,,Ratio,,,,Total
+Burundi,BI,BDI,108,VMI (vast majority index of income inequality),2014,0.670875,Total,,Ratio,,,,Total
+Cape Verde,CV,CPV,132,VMI (vast majority index of income inequality),2008,0.584125,Total,,Ratio,,,,Total
+Cambodia,KH,KHM,116,VMI (vast majority index of income inequality),2012,0.747375,Total,,Ratio,,,,Total
+Cameroon,CM,CMR,120,VMI (vast majority index of income inequality),2014,0.6035,Total,,Ratio,,,,Total
+Canada,CA,CAN,124,VMI (vast majority index of income inequality),2013,0.74075,Total,,Ratio,,,,Total
+Central African Republic,CF,CAF,140,VMI (vast majority index of income inequality),2008,0.489375,Total,,Ratio,,,,Total
+Chad,TD,TCD,148,VMI (vast majority index of income inequality),2011,0.64,Total,,Ratio,,,,Total
+Chile,CL,CHL,152,VMI (vast majority index of income inequality),2017,0.58875,Total,,Ratio,,,,Total
+China,CN,CHN,156,VMI (vast majority index of income inequality),2015,0.682875,Total,,Ratio,,,,Total
+Colombia,CO,COL,170,VMI (vast majority index of income inequality),2017,0.565375,Total,,Ratio,,,,Total
+Comoros,KM,COM,174,VMI (vast majority index of income inequality),2014,0.6205,Total,,Ratio,,,,Total
+Congo,CG,COG,178,VMI (vast majority index of income inequality),2011,0.57825,Total,,Ratio,,,,Total
+Costa Rica,CR,CRI,188,VMI (vast majority index of income inequality),2017,0.575375,Total,,Ratio,,,,Total
+Croatia,HR,HRV,191,VMI (vast majority index of income inequality),2015,0.7695,Total,,Ratio,,,,Total
+Cyprus,CY,CYP,196,VMI (vast majority index of income inequality),2015,0.723375,Total,,Ratio,,,,Total
+Czech Republic,CZ,CZE,203,VMI (vast majority index of income inequality),2015,0.800625,Total,,Ratio,,,,Total
+Côte d'Ivoire,CI,CIV,384,VMI (vast majority index of income inequality),2015,0.65275,Total,,Ratio,,,,Total
+Ivory Coast,CI,CIV,384,VMI (vast majority index of income inequality),2015,0.65275,Total,,Ratio,,,,Total
+Congo, the Democratic Republic of the,CD,COD,180,VMI (vast majority index of income inequality),2013,0.645375,Total,,Ratio,,,,Total
+Denmark,DK,DNK,208,VMI (vast majority index of income inequality),2015,0.77875,Total,,Ratio,,,,Total
+Djibouti,DJ,DJI,262,VMI (vast majority index of income inequality),2017,0.655125,Total,,Ratio,,,,Total
+Dominican Republic,DO,DOM,214,VMI (vast majority index of income inequality),2016,0.60575,Total,,Ratio,,,,Total
+Ecuador,EC,ECU,218,VMI (vast majority index of income inequality),2017,0.62325,Total,,Ratio,,,,Total
+Egypt,EG,EGY,818,VMI (vast majority index of income inequality),2015,0.731375,Total,,Ratio,,,,Total
+El Salvador,SV,SLV,222,VMI (vast majority index of income inequality),2017,0.690875,Total,,Ratio,,,,Total
+Estonia,EE,EST,233,VMI (vast majority index of income inequality),2015,0.745125,Total,,Ratio,,,,Total
+Swaziland,SZ,SWZ,748,VMI (vast majority index of income inequality),2010,0.54075,Total,,Ratio,,,,Total
+Ethiopia,ET,ETH,231,VMI (vast majority index of income inequality),2016,0.7125,Total,,Ratio,,,,Total
+Fiji,FJ,FJI,242,VMI (vast majority index of income inequality),2014,0.691625,Total,,Ratio,,,,Total
+Finland,FI,FIN,246,VMI (vast majority index of income inequality),2015,0.791375,Total,,Ratio,,,,Total
+France,FR,FRA,250,VMI (vast majority index of income inequality),2015,0.738625,Total,,Ratio,,,,Total
+Gabon,GA,GAB,266,VMI (vast majority index of income inequality),2017,0.6955,Total,,Ratio,,,,Total
+Gambia,GM,GMB,270,VMI (vast majority index of income inequality),2016,0.704875,Total,,Ratio,,,,Total
+Georgia,GE,GEO,268,VMI (vast majority index of income inequality),2017,0.693625,Total,,Ratio,,,,Total
+Germany,DE,DEU,276,VMI (vast majority index of income inequality),2015,0.754125,Total,,Ratio,,,,Total
+Ghana,GH,GHA,288,VMI (vast majority index of income inequality),2017,0.642375,Total,,Ratio,,,,Total
+Greece,GR,GRC,300,VMI (vast majority index of income inequality),2015,0.727375,Total,,Ratio,,,,Total
+Guatemala,GT,GTM,320,VMI (vast majority index of income inequality),2014,0.580125,Total,,Ratio,,,,Total
+Guinea,GN,GIN,324,VMI (vast majority index of income inequality),2012,0.731125,Total,,Ratio,,,,Total
+Guinea-Bissau,GW,GNB,624,VMI (vast majority index of income inequality),2010,0.54125,Total,,Ratio,,,,Total
+Guyana,GY,GUY,328,VMI (vast majority index of income inequality),1998,0.6305,Total,,Ratio,,,,Total
+Haiti,HT,HTI,332,VMI (vast majority index of income inequality),2012,0.446375,Total,,Ratio,,,,Total
+Honduras,HN,HND,340,VMI (vast majority index of income inequality),2017,0.568125,Total,,Ratio,,,,Total
+Hungary,HU,HUN,348,VMI (vast majority index of income inequality),2015,0.77025,Total,,Ratio,,,,Total
+Iceland,IS,ISL,352,VMI (vast majority index of income inequality),2014,0.783375,Total,,Ratio,,,,Total
+India,IN,IND,356,VMI (vast majority index of income inequality),2012,0.694625,Total,,Ratio,,,,Total
+Indonesia,ID,IDN,360,VMI (vast majority index of income inequality),2017,0.684875,Total,,Ratio,,,,Total
+Iran, Islamic Republic of,IR,IRN,364,VMI (vast majority index of income inequality),2016,0.666625,Total,,Ratio,,,,Total
+Iraq,IQ,IRQ,368,VMI (vast majority index of income inequality),2012,0.76875,Total,,Ratio,,,,Total
+Ireland,IE,IRL,372,VMI (vast majority index of income inequality),2015,0.747375,Total,,Ratio,,,,Total
+Israel,IL,ISR,376,VMI (vast majority index of income inequality),2016,0.697875,Total,,Ratio,,,,Total
+Italy,IT,ITA,380,VMI (vast majority index of income inequality),2015,0.73325,Total,,Ratio,,,,Total
+Jamaica,JM,JAM,388,VMI (vast majority index of income inequality),2004,0.60475,Total,,Ratio,,,,Total
+Japan,JP,JPN,392,VMI (vast majority index of income inequality),2009,0.75375,Total,,Ratio,,,,Total
+Jordan,JO,JOR,400,VMI (vast majority index of income inequality),2011,0.72,Total,,Ratio,,,,Total
+Kazakhstan,KZ,KAZ,398,VMI (vast majority index of income inequality),2017,0.782,Total,,Ratio,,,,Total
+Kenya,KE,KEN,404,VMI (vast majority index of income inequality),2016,0.655875,Total,,Ratio,,,,Total
+Kiribati,KI,KIR,296,VMI (vast majority index of income inequality),2006,0.70075,Total,,Ratio,,,,Total
+Kyrgyzstan,KG,KGZ,417,VMI (vast majority index of income inequality),2017,0.781875,Total,,Ratio,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,VMI (vast majority index of income inequality),2013,0.6925,Total,,Ratio,,,,Total
+Latvia,LV,LVA,428,VMI (vast majority index of income inequality),2015,0.731125,Total,,Ratio,,,,Total
+Lebanon,LB,LBN,422,VMI (vast majority index of income inequality),2012,0.7505,Total,,Ratio,,,,Total
+Lesotho,LS,LSO,426,VMI (vast majority index of income inequality),2010,0.522375,Total,,Ratio,,,,Total
+Liberia,LR,LBR,430,VMI (vast majority index of income inequality),2016,0.714875,Total,,Ratio,,,,Total
+Lithuania,LT,LTU,440,VMI (vast majority index of income inequality),2015,0.69825,Total,,Ratio,,,,Total
+Luxembourg,LU,LUX,442,VMI (vast majority index of income inequality),2015,0.7375,Total,,Ratio,,,,Total
+Madagascar,MG,MDG,450,VMI (vast majority index of income inequality),2012,0.632375,Total,,Ratio,,,,Total
+Malawi,MW,MWI,454,VMI (vast majority index of income inequality),2017,0.60425,Total,,Ratio,,,,Total
+Malaysia,MY,MYS,458,VMI (vast majority index of income inequality),2016,0.65925,Total,,Ratio,,,,Total
+Maldives,MV,MDV,462,VMI (vast majority index of income inequality),2010,0.687125,Total,,Ratio,,,,Total
+Mali,ML,MLI,466,VMI (vast majority index of income inequality),2010,0.73375,Total,,Ratio,,,,Total
+Malta,MT,MLT,470,VMI (vast majority index of income inequality),2015,0.773625,Total,,Ratio,,,,Total
+Mauritania,MR,MRT,478,VMI (vast majority index of income inequality),2014,0.747625,Total,,Ratio,,,,Total
+Mauritius,MU,MUS,480,VMI (vast majority index of income inequality),2012,0.6725,Total,,Ratio,,,,Total
+Mexico,MX,MEX,484,VMI (vast majority index of income inequality),2016,0.57275,Total,,Ratio,,,,Total
+Micronesia, Federated States of,FM,FSM,583,VMI (vast majority index of income inequality),2013,0.67475,Total,,Ratio,,,,Total
+Mongolia,MN,MNG,496,VMI (vast majority index of income inequality),2016,0.743,Total,,Ratio,,,,Total
+Montenegro,ME,MNE,499,VMI (vast majority index of income inequality),2014,0.74375,Total,,Ratio,,,,Total
+Morocco,MA,MAR,504,VMI (vast majority index of income inequality),2014,0.662625,Total,,Ratio,,,,Total
+Mozambique,MZ,MOZ,508,VMI (vast majority index of income inequality),2015,0.505875,Total,,Ratio,,,,Total
+Myanmar,MM,MMR,104,VMI (vast majority index of income inequality),2015,0.678375,Total,,Ratio,,,,Total
+Burma,MM,MMR,104,VMI (vast majority index of income inequality),2015,0.678375,Total,,Ratio,,,,Total
+Namibia,,NAM,516,VMI (vast majority index of income inequality),2016,0.453375,Total,,Ratio,,,,Total
+Nepal,NP,NPL,524,VMI (vast majority index of income inequality),2011,0.731125,Total,,Ratio,,,,Total
+Netherlands,NL,NLD,528,VMI (vast majority index of income inequality),2015,0.78325,Total,,Ratio,,,,Total
+Nicaragua,NI,NIC,558,VMI (vast majority index of income inequality),2014,0.59925,Total,,Ratio,,,,Total
+Niger,NE,NER,562,VMI (vast majority index of income inequality),2014,0.71975,Total,,Ratio,,,,Total
+Nigeria,NG,NGA,566,VMI (vast majority index of income inequality),2010,0.63775,Total,,Ratio,,,,Total
+Macedonia, the former Yugoslav Republic of,MK,MKD,807,VMI (vast majority index of income inequality),2015,0.736625,Total,,Ratio,,,,Total
+Norway,NO,NOR,578,VMI (vast majority index of income inequality),2015,0.793375,Total,,Ratio,,,,Total
+Pakistan,PK,PAK,586,VMI (vast majority index of income inequality),2016,0.71525,Total,,Ratio,,,,Total
+Panama,PA,PAN,591,VMI (vast majority index of income inequality),2017,0.572625,Total,,Ratio,,,,Total
+Papua New Guinea,PG,PNG,598,VMI (vast majority index of income inequality),2010,0.65825,Total,,Ratio,,,,Total
+Paraguay,PY,PRY,600,VMI (vast majority index of income inequality),2017,0.574625,Total,,Ratio,,,,Total
+Peru,PE,PER,604,VMI (vast majority index of income inequality),2017,0.6445,Total,,Ratio,,,,Total
+Philippines,PH,PHL,608,VMI (vast majority index of income inequality),2015,0.614125,Total,,Ratio,,,,Total
+Poland,PL,POL,616,VMI (vast majority index of income inequality),2016,0.756625,Total,,Ratio,,,,Total
+Portugal,PT,PRT,620,VMI (vast majority index of income inequality),2015,0.716625,Total,,Ratio,,,,Total
+Korea, Republic of,KR,KOR,410,VMI (vast majority index of income inequality),2012,0.76275,Total,,Ratio,,,,Total
+South Korea,KR,KOR,410,VMI (vast majority index of income inequality),2012,0.76275,Total,,Ratio,,,,Total
+Moldova, Republic of,MD,MDA,498,VMI (vast majority index of income inequality),2017,0.799,Total,,Ratio,,,,Total
+Romania,RO,ROU,642,VMI (vast majority index of income inequality),2016,0.78825,Total,,Ratio,,,,Total
+Russian Federation,RU,RUS,643,VMI (vast majority index of income inequality),2015,0.684,Total,,Ratio,,,,Total
+Russia,RU,RUS,643,VMI (vast majority index of income inequality),2015,0.684,Total,,Ratio,,,,Total
+Rwanda,RW,RWA,646,VMI (vast majority index of income inequality),2017,0.614625,Total,,Ratio,,,,Total
+Saint Lucia,LC,LCA,662,VMI (vast majority index of income inequality),2016,0.557625,Total,,Ratio,,,,Total
+Samoa,WS,WSM,882,VMI (vast majority index of income inequality),2014,0.6705,Total,,Ratio,,,,Total
+Sao Tome and Principe,ST,STP,678,VMI (vast majority index of income inequality),2010,0.756375,Total,,Ratio,,,,Total
+Senegal,SN,SEN,686,VMI (vast majority index of income inequality),2012,0.663375,Total,,Ratio,,,,Total
+Serbia,RS,SRB,688,VMI (vast majority index of income inequality),2015,0.694375,Total,,Ratio,,,,Total
+Seychelles,SC,SYC,690,VMI (vast majority index of income inequality),2013,0.58725,Total,,Ratio,,,,Total
+Sierra Leone,SL,SLE,694,VMI (vast majority index of income inequality),2011,0.719625,Total,,Ratio,,,,Total
+Slovakia,SK,SVK,703,VMI (vast majority index of income inequality),2015,0.81225,Total,,Ratio,,,,Total
+Slovenia,SI,SVN,705,VMI (vast majority index of income inequality),2015,0.811125,Total,,Ratio,,,,Total
+Solomon Islands,SB,SLB,90,VMI (vast majority index of income inequality),2013,0.692375,Total,,Ratio,,,,Total
+South Africa,ZA,ZAF,710,VMI (vast majority index of income inequality),2015,0.39725,Total,,Ratio,,,,Total
+South Sudan,SS,SSD,728,VMI (vast majority index of income inequality),2009,0.618,Total,,Ratio,,,,Total
+Spain,ES,ESP,724,VMI (vast majority index of income inequality),2015,0.724125,Total,,Ratio,,,,Total
+Sri Lanka,LK,LKA,144,VMI (vast majority index of income inequality),2016,0.655375,Total,,Ratio,,,,Total
+Palestinian Territory, Occupied,PS,PSE,275,VMI (vast majority index of income inequality),2017,0.736625,Total,,Ratio,,,,Total
+Sudan,SD,SDN,736,VMI (vast majority index of income inequality),2009,0.72025,Total,,Ratio,,,,Total
+Suriname,SR,SUR,740,VMI (vast majority index of income inequality),1999,0.497125,Total,,Ratio,,,,Total
+Sweden,SE,SWE,752,VMI (vast majority index of income inequality),2015,0.7805,Total,,Ratio,,,,Total
+Switzerland,CH,CHE,756,VMI (vast majority index of income inequality),2015,0.747125,Total,,Ratio,,,,Total
+Syrian Arab Republic,SY,SYR,760,VMI (vast majority index of income inequality),2004,0.699375,Total,,Ratio,,,,Total
+Tajikistan,TJ,TJK,762,VMI (vast majority index of income inequality),2015,0.7285,Total,,Ratio,,,,Total
+Thailand,TH,THA,764,VMI (vast majority index of income inequality),2017,0.699,Total,,Ratio,,,,Total
+Timor-Leste,TL,TLS,626,VMI (vast majority index of income inequality),2014,0.77,Total,,Ratio,,,,Total
+Togo,TG,TGO,768,VMI (vast majority index of income inequality),2015,0.642625,Total,,Ratio,,,,Total
+Tonga,TO,TON,776,VMI (vast majority index of income inequality),2015,0.683,Total,,Ratio,,,,Total
+Trinidad and Tobago,TT,TTO,780,VMI (vast majority index of income inequality),1992,0.676375,Total,,Ratio,,,,Total
+Tunisia,TN,TUN,788,VMI (vast majority index of income inequality),2016,0.738625,Total,,Ratio,,,,Total
+Turkmenistan,TM,TKM,795,VMI (vast majority index of income inequality),1998,0.656625,Total,,Ratio,,,,Total
+Tuvalu,TV,TUV,798,VMI (vast majority index of income inequality),2010,0.67025,Total,,Ratio,,,,Total
+Turkey,TR,TUR,792,VMI (vast majority index of income inequality),2016,0.646125,Total,,Ratio,,,,Total
+Uganda,UG,UGA,800,VMI (vast majority index of income inequality),2017,0.6275,Total,,Ratio,,,,Total
+Ukraine,UA,UKR,804,VMI (vast majority index of income inequality),2016,0.810625,Total,,Ratio,,,,Total
+United Kingdom,GB,GBR,826,VMI (vast majority index of income inequality),2015,0.742625,Total,,Ratio,,,,Total
+Tanzania, United Republic of,TZ,TZA,834,VMI (vast majority index of income inequality),2012,0.677125,Total,,Ratio,,,,Total
+United States,US,USA,840,VMI (vast majority index of income inequality),2016,0.664,Total,,Ratio,,,,Total
+Uruguay,UY,URY,858,VMI (vast majority index of income inequality),2017,0.677125,Total,,Ratio,,,,Total
+Uzbekistan,UZ,UZB,860,VMI (vast majority index of income inequality),2003,0.707625,Total,,Ratio,,,,Total
+Vanuatu,VU,VUT,548,VMI (vast majority index of income inequality),2010,0.68975,Total,,Ratio,,,,Total
+Venezuela, Bolivarian Republic of,VE,VEN,862,VMI (vast majority index of income inequality),2006,0.61575,Total,,Ratio,,,,Total
+Venezuela,VE,VEN,862,VMI (vast majority index of income inequality),2006,0.61575,Total,,Ratio,,,,Total
+Vietnam,VN,VNM,704,VMI (vast majority index of income inequality),2016,0.718875,Total,,Ratio,,,,Total
+Vietnam,VN,VNM,704,VMI (vast majority index of income inequality),2016,0.718875,Total,,Ratio,,,,Total
+Yemen,YE,YEM,887,VMI (vast majority index of income inequality),2014,0.691125,Total,,Ratio,,,,Total
+Zambia,ZM,ZMB,894,VMI (vast majority index of income inequality),2015,0.484125,Total,,Ratio,,,,Total
+Zimbabwe,ZW,ZWE,716,VMI (vast majority index of income inequality),2011,0.629125,Total,,Ratio,,,,Total
